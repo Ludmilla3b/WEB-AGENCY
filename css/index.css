@@ -1,0 +1,238 @@
+/* RESET */
+* {
+    margin: 0; 
+    padding: 0; 
+    
+    list-style: none;
+    text-decoration: none;
+}
+/* FIN RESET */
+
+/* Barre de Menu */
+
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-position: top;
+}   
+/* Fin barre de menu */
+/* Début Caroussel*/
+.menu {
+    display: flex;
+}
+.menu li { 
+    font-size: 1rem;
+    padding: 20px;
+}
+li :hover {
+    color: blue;
+    border-top: 5px solid aqua;
+    padding-top: 40px;
+}
+a {
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;    
+color: gray;
+font-size: 15px;
+margin: 0 15px;
+padding: 15px;
+}
+.container{
+    display: flex;
+}
+/* Bouton d'infos */
+.fonction{
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 98px;
+    height: 36px;
+    margin: 43px;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+    background-color: #5cadd3;
+}
+
+.img_text{   
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    top: 40%;
+    color: #f2f2f2;
+    font-size: 29px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: left;
+    margin: 8px 0px 0px 155px;
+}
+.img_text span{
+    color: rgba(0,200,255,0.729);
+}
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 40%;
+    width: auto;
+    margin-top: -36px;
+    padding: 25px;
+    color: white;
+    font-weight: bold;
+    font-size: 29px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+}
+ /* Position the "next button" to the right */
+
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+  /* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+/*Fin du carousel*/
+/*Début de service*/
+#services_containers{
+    display: flex;
+    text-align: center
+}
+.services h2 {
+    font-family : 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;    
+    color: black;
+    font-size: 40px; 
+    text-align: center;
+    margin: 50px;
+    
+}
+/* TEXTE */
+
+.services p{
+color: grey;
+text-align: center;
+margin: 50px 250px 10px 278px;
+height: 130px;
+}
+
+.services_images{
+display: flex;
+}
+.img {
+    max-width: 320px;
+    float: left;
+}
+
+.icones{
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+}
+.icones_img{
+    display: flex;
+    padding: 30px;
+    color: aqua;
+    flex-direction: column;
+}
+.h3{
+    justify-content: center;
+    flex-direction: column ;
+}    
+
+/*Fin de service*/
+/* DEBUT DU PORTFOLIO */
+#porfolio {
+    position: relative;
+    background-color: bisque;
+}
+.présentation{
+    text-align: center;
+    font-family : 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;  
+    color: black;
+    font-size: 20px;
+    
+}
+.présentation p {
+    color: grey;
+text-align: center;
+margin: 50px 250px 10px 278px;
+height: 130px;
+}
+#navbar_portfolio{
+    display: flex;
+    text-align: center;
+    justify-content: space-around;
+}
+.projet{
+    display: flex;
+    margin: -57px 50px 20px 0;
+    left: 30px;
+}
+.projet li{
+    font-size: 1rem;
+}
+.images_portfolio{
+    display: flex;
+    max-width: 1500px;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.images_portfolio img{
+    width: 212px;
+}
+.images_portfolio figure{
+    margin: 15px;
+    position: relative;
+}
+/* FIN DU PORFOLIO*/
+#contact{
+    position: relative;
+}
+iframe{
+    position: absolute;
+    width: 100vw;
+    height: 700px;
+    z-index: 2;
+}
+
+.filtre{
+    position:relative;
+    width: 100vw;
+    height: 700px;
+    background-color: black;
+    z-index: 3;
+}
+/* FORMULAIRE */
+form{
+    display: flex;
+    flex-direction: column;
+}
+.formulaire{
+    position: absolute;
+    z-index: 10;
+    background-color: rgba(0,200,255,0.6);
+    top: 60px;
+    right: 70px;
+    width: 300px;
+}
+.formulaire h2{
+    text-align: left;
+    text-transform: capitalize;
+    margin: top 10px;
+}
+.formulaire h3{
+    font-size: 1em;
+}
+.formu {
+    display: flex;
+    flex-direction: column;
+}
+.input{
+    width: 200px;
+}
+.textarea{
+    width: 200px;
+}
